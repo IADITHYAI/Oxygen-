@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base :: layout(~{::section})}">
+<body>
+<section>
+
+  <!-- Hero Section -->
+  <div class="container py-5 text-center">
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <h1 class="fw-bold">Welcome to OX</h1>
+        <p class="text-muted">
+          Smart Oxygen Cylinder Monitoring & Management System
+        </p>
+        <p>
+          OX enables hospitals and healthcare providers to manage oxygen 
+          cylinders with ease. From real-time tracking to safe distribution, 
+          OX helps save time and lives.
+        </p>
+        <a class="btn btn-primary btn-md me-2" th:href="@{/login}">
+          <i class="fa-solid fa-right-to-bracket"></i> Get Started
+        </a>
+        <a class="btn btn-outline-primary btn-md" th:href="@{/about}">
+          <i class="fa-solid fa-circle-info"></i> Learn More
+        </a>
+      </div>
+      <div class="col-md-6 text-center" data-aos="fade-left">
+        <!-- Hero Image -->
+        <img src="img/doc1.png" alt="OX Hero" class="img-fluid rounded shadow-sm">
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Section (Why OX) -->
+  <div class="container text-center my-5">
+    <h2 class="fw-semibold mb-4" data-aos="fade-up">Why Choose OX?</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <i class="fa-solid fa-heart-pulse fa-2x text-danger mb-3"></i>
+            <h5 class="card-title">Healthcare Safety</h5>
+            <p class="card-text small text-muted">
+              Every oxygen cylinder is tracked and inspected to ensure reliability. 
+              Our system detects defects early and alerts staff immediately.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <i class="fa-solid fa-chart-line fa-2x text-primary mb-3"></i>
+            <h5 class="card-title">Real-time Monitoring</h5>
+            <p class="card-text small text-muted">
+              Track cylinder usage and availability in real-time using our 
+              user-friendly dashboard.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <i class="fa-solid fa-truck-medical fa-2x text-success mb-3"></i>
+            <h5 class="card-title">Quick Allocation</h5>
+            <p class="card-text small text-muted">
+              Request and allocate cylinders in seconds — ensuring oxygen is 
+              delivered on time during emergencies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="img/doc2.png" alt="About OX" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-6 text-center text-md-start" data-aos="fade-left">
+          <h2 class="fw-semibold">About OX</h2>
+          <p class="small text-muted">
+            OX was founded to revolutionize how healthcare institutions 
+            manage oxygen. With automated alerts, smart scheduling, and 
+            advanced monitoring, OX ensures oxygen is always available.
+          </p>
+          <p class="small text-muted">
+            From small clinics to large hospitals, OX adapts seamlessly, 
+            providing scalable solutions for safe and efficient management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="container text-center my-5">
+    <h3 class="fw-semibold" data-aos="fade-up">Get Started with OX Today</h3>
+    <p class="small text-muted" data-aos="fade-up" data-aos-delay="100">
+      Trusted by healthcare providers to ensure oxygen supply and save lives.  
+    </p>
+    <a class="btn btn-primary btn-md me-2" th:href="@{/register}" data-aos="zoom-in">
+      <i class="fa-solid fa-user-plus"></i> Register Now
+    </a>
+    <a class="btn btn-outline-primary btn-md" th:href="@{/contact}" data-aos="zoom-in" data-aos-delay="150">
+      <i class="fa-solid fa-envelope"></i> Contact Us
+    </a>
+  </div>
+
+</section>
+</body>
+<!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+</html>
